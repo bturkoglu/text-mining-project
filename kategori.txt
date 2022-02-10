@@ -1,0 +1,3 @@
+ekonomi : enflasyon,tarým
+spor : hakem,taraftar,gol,kupa
+saðlýk : ilaç,grip,doktor,hasta

@@ -1,0 +1,55 @@
+grip e yakalanan hasta grip olduðunu anlamamýþtý ilaç ýný almamýþtý.
+
+ilaç ýný aksatanlar hastalýða davetiye çýkarýyor.
+
+yýllýk enflasyon oraný bu senede yükseliþte.
+
+tarým la ugraþanlar bu sene tarým dan zarar edecekler
+
+hakem in gözü önünde olmasýna raðmen hakem penaltý vermedi
+
+taraftar lara erken gelen gol ilaç gibiydi ve taraftar lar golden sonra hiç susmadý
+
+sözlük = { enflasyon,grip,hakem,ilaç,taraftar,tarým}
+
+********************************************************************************************************
+frekans tablosu
+
+    e g h i t tr
+d1 {0,2,0,1,0,0}
+d2 {0,0,0,1,0,0}
+d3 {1,0,0,0,0,0}
+d4 {0,0,0,0,0,2}
+d5 {0,0,2,0,0,0}
+d6 {0,0,0,1,2,0}
+
+*********************************************************************************************************
+
+Agýrlýklandýrma metodu
+
+W= tf * idf       idf= log[D/dtf]
+D: Eðitim döküman Sayýsý  (yukarýdaki tablo için d1,d2,d3,d4,d5,d6 yani 6 tane)
+tf:Terimin dökümanda geçme frekansý (tablodaki deðerler) 
+dtf=Kaç dökümanda ilgili terimin geçtiði
+{   log2:0.30   log=3:0.47   log4:0.60     log5:0.69      log6:0.77  }
+*************************************************************************
+dtf tablosu
+
+enflasyon:1
+grip:1
+hakem:1
+ilaç:3
+taraftar:1
+tarým:1
+***************************************************************************
+    e      g      h   i       t     tr
+d1 {0   ,1.54,   0,   0.3,      0,     0}
+d2 {0     ,0 ,   0,   0.3,      0,     0}
+d3 {0.77  ,0 ,   0,   0.0,      0,     0}
+d4 {0     ,0 ,   0,   0.0,      0,     1.54}
+d5 {0     ,0 , 1.54,  0.0,      0,     0}
+d6 {0     ,0 ,   0,   0.3,   1.54,     0}
+
+******************************************************************************
+
+Bahaeddin TÜRKOÐLU
